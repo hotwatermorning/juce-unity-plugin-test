@@ -3,6 +3,12 @@
 MacOS 環境:
 
 ```sh
+cd /path/to/develop
+
+git clone https://github.com/hotwatermorning/juce-unity-plugin-test.git
+cd juce-unity-plugin-test
+git submodule update --init
+
 cmake -G Xcode -B build .
 cmake --build build --config Release
 ```
